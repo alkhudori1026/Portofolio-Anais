@@ -1,0 +1,205 @@
+/* 1. RESET BASE STYLE (Biar jarak bawaan browser hilang dan rapi) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mengatur font global dan efek scroll mulus saat navigasi diklik */
+html {
+    font-family: 'Inter', sans-serif; /* Menggunakan font yang bersih */
+    scroll-behavior: smooth;
+    background-color: #d7ccff; /* Warna latar belakang abu-abu sangat muda */
+    color: #212529; /* Warna teks utama */
+}
+
+/* 2. STYLING HEADER & NAVIGASI */
+header {
+    background-color: #834de7; /* Warna background header putih */
+    padding: 20px 10%; /* Jarak atas-bawah 20px, kanan-kiri 10% agar seimbang */
+    display: flex; /* Mengaktifkan mode flexbox */
+    justify-content: space-between; /* Logo di kiri mentok, Navigasi di kanan mentok */
+    align-items: center; /* Membuat teks logo dan menu sejajar lurus di tengah */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Memberi efek bayangan tipis di bawah header */
+    position: sticky; /* Membuat header tetap menempel di atas saat di-scroll */
+    top: 0;
+    z-index: 100;
+}
+
+/* Desain untuk Logo */
+#logo h2 {
+    font-weight: 700;
+    color: #2b2d42; /* Warna biru gelap yang elegan */
+}
+
+/* Desain untuk Link Navigasi */
+nav a {
+    text-decoration: none; /* Menghilangkan garis bawah bawaan link */
+    color: #210555; /* Warna teks abu-abu agar terlihat clean */
+    background-color: #9565ee; /* Memberi warna latar belakang abu-abu muda */
+    font-weight: 500;
+    margin-left: 20px; /* Memberi jarak antar menu */
+    padding: 5px 10px; /* Memberi ruang di dalam link agar lebih mudah diklik */
+    border-radius: 5px; /* Membuat sudut link sedikit membulat */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Memberi efek bayangan tipis di bawah link */
+    transition: color 0.3s ease; /* Efek transisi halus saat cursor mendekat */
+}
+
+/* Efek ketika menu navigasi diarahkan cursor (Hover) */
+nav a:hover {
+    color: #cbb7f0; /* Warna berubah jadi gelap saat didekati */
+    background-color: #834de7; /* Memberi warna latar belakang abu-abu muda */
+}
+/* Mengatur warna kotak/area HOME */
+/* Mengatur warna kotak/area HOME dengan Gradasi */
+#home {
+    /* Gradasi miring 135 derajat dari biru cerah ke ungu lembut */
+    background: linear-gradient(0deg, #ebe9fa 0%, #7442d1 100%);
+    
+    /* Alternatif warna lain kalau kamu suka warna semi-gelap modern:
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); 
+    */
+}
+
+/* Mengatur warna kotak/area ABOUT */
+#about {
+    background-color: #ffffff; /* Warna putih bersih agar kontras dengan Home */
+}
+
+/* Mengatur warna kotak/area SKILLS */
+#skills {
+    background-color: #e2e8f0; /* Warna abu-abu yang sedikit lebih tegas */
+}
+
+/* Mengatur warna kotak/area PROJECTS */
+#projects {
+    background-color: #ffffff; /* Kembali ke warna putih */
+}
+/* Styling khusus untuk container Home */
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px; /* Jarak antara kolom teks dan foto */
+    width: 100%;
+}
+
+/* Mengatur kolom teks (Kiri) */
+.home-content {
+    flex: 1; /* Mengambil ruang proporsional */
+}
+
+.home-content h5 {
+    color: #d6c2f5;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #2b2d42;
+}
+
+/* Efek warna khusus untuk nama kamu */
+.highlight {
+    color: #4361ee; /* Warna biru modern */
+}
+
+.home-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4a4e69;
+    margin-bottom: 30px;
+}
+
+/* Mengatur Tombol */
+.home-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #4361ee;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #3046c4;
+}
+
+.btn-secondary {
+    border: 2px solid #4361ee;
+    color: #4361ee;
+}
+
+.btn-secondary:hover {
+    background-color: #4361ee;
+    color: white;
+}
+
+/* Styling untuk tombol ketiga (Github) */
+.btn-third {
+    background-color: #333;
+    color: white;
+}
+
+.btn-third:hover {
+    background-color: #555;
+}
+
+/* Styling untuk tombol keempat (Instagram) */
+.btn-fourth {
+    background-color: #e1306c;
+    color: white;
+}
+
+.btn-fourth:hover {
+    background-color: #d6336c;
+}
+
+/* Mengatur kolom foto (Kanan) */
+.home-profile {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.home-profile div {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Jarak antar tombol */
+}
+
+.home-profile div a {
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi halus */
+}
+
+.home-profile img {
+    width: 320px; /* Atur lebar foto */
+    height: 320px; /* Atur tinggi foto */
+    border-radius: 50%; /* Membuat foto menjadi bulat otomatis */
+    object-fit: cover; /* Agar foto tidak gepeng */
+    border: 8px solid #ffffff; /* Efek bingkai putih */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1); /* Efek bayangan halus */
+    margin:auto; /* Membuat foto berada di tengah */
+}
+/* 3. STYLING SECTIONS (Mengatur Area Konten) */
+
+/* Kita beri jarak atas-bawah (padding) yang sama untuk semua section agar rapi */
+section {
+    padding: 100px 10%; /* 100px atas-bawah agar ada ruang bernapas, 10% kanan-kiri */
+    min-height: 80vh; /* Membuat tinggi minimal setiap section hampir memenuhi layar */
+}
