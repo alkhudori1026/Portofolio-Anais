@@ -9,8 +9,8 @@
     /* ========================================================
        1. 60% WARNA DOMINAN (LATAR BELAKANG / NETRAL)
        ======================================================== */
-    --bg-main1: rgb(117, 200, 255); --bg-main2: rgb(230, 243, 255);        /* Warna dasar halaman (abu-abu super terang) */
-    --bg-card1: rgb(104, 173, 219); --bg-card2: rgb(218, 235, 252);        /* Warna kotak/kartu detail */
+    --bg-main1: #75c8ff; --bg-main2: rgb(230, 243, 255);        /* Warna dasar halaman (abu-abu super terang) */
+    --bg-card1: rgb(104, 173, 219); --bg-card2: rgb(190, 222, 255);        /* Warna kotak/kartu detail */
     --bg-dark1: rgb(15, 23, 42); --bg-dark2: rgb(15, 23, 42);        /* (Opsional) Jika ada section yang mau dibuat gelap */
 
     /* ========================================================
@@ -28,7 +28,7 @@
     --color-base-hover: rgb(38, 60, 184); /* Biru agak gelap saat tombol di-hover */
 
     /* Warna Seberang Kanan (Split Accent 1) */
-    --color-split-1: rgb(252, 94, 9);    /* Oranye - Untuk Tombol CTA Utama (Paling Mencolok) */
+    --color-split-1: #fc5e09;    /* Oranye - Untuk Tombol CTA Utama (Paling Mencolok) */
     --color-split-1-hover: rgb(224, 78, 27);
 
     /* Warna Seberang Kiri (Split Accent 2) */
@@ -58,7 +58,7 @@ header {
 }
 
 /* Desain untuk Logo */
-#logo h2 {
+.logo h2 {
     font-weight: 700;
     color: var(--text-main); /* Warna biru gelap yang elegan */
 }
@@ -67,7 +67,7 @@ header {
 nav a {
     text-decoration: none; /* Menghilangkan garis bawah bawaan link */
     color: var(--text-main); /* Warna teks abu-abu agar terlihat clean */
-    background-color: var(--color-split-1); /* Memberi warna latar belakang abu-abu muda */
+    background-color: var(--bg-card1); /* Memberi warna latar belakang abu-abu muda */
     font-weight: 500;
     margin-left: 20px; /* Memberi jarak antar menu */
     padding: 5px 10px; /* Memberi ruang di dalam link agar lebih mudah diklik */
@@ -78,8 +78,8 @@ nav a {
 
 /* Efek ketika menu navigasi diarahkan cursor (Hover) */
 nav a:hover {
-    color: var(--text-secondary); /* Warna berubah jadi gelap saat didekati */
-    background-color: var(--color-split-1-hover); /* Memberi warna latar belakang abu-abu muda */
+    color: var(--text-muted); /* Warna berubah jadi gelap saat didekati */
+    background-color: var(--bg-card2); /* Memberi warna latar belakang abu-abu muda */
 }
 
 

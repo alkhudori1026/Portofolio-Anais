@@ -4,21 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anais Kun</title>
+    <title>Portofolio Unais</title>
     <link rel="stylesheet" href="Portofolio.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+     <style type="text/tailwind">
+        
+    </style>
 </head>
 
 <body>
 
     <header>
         <div class="logo">
-            <h2>Anais Kun</h2>
+            <h1>Portofolio <span style="color: var(--color-split-1);">Unais</span></h1>
         </div>
         <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#project">Project</a>
-            <a href="#contact">Contact</a>
+            <a style="font-size: 20px; font-weight: 600;" href="#home">Home</a>
+            <a style="font-size: 20px; font-weight: 600;" href="#about">About</a>
+            <a style="font-size: 20px; font-weight: 600;" href="#project">Project</a>
+            <a style="font-size: 20px; font-weight: 600;" href="#contact">Contact</a>
         </nav>
     </header>
 
@@ -28,7 +32,7 @@
 
             <div class="home-content">
                 <h5>Welcome to my Website</h5>
-                <h1>Halo, Aku <span class="highlight">Anais</span></h1>
+                <h1>Halo, Aku <span class="highlight">Unais</span></h1>
                 <p>Seorang pembelajar otodidak yang aktif mengeksplorasi coding, desain visual, dan sistem
                     produktivitas. Saat ini fokus mendalami HTML, CSS, dan JavaScript.</p>
                 <div class="home-buttons">
@@ -57,8 +61,8 @@
             <div class="about-text">
                 <h5>MENGENAL LEBIH DEKAT</h5>
                 <h2>Tentang <span class="highlight">Saya</span></h2>
-                <p>Hai! Nama saya Anais. Saya adalah seorang mahasiswa yang saat ini sedang aktif mendalami dunia
-                    teknologi dan pengembangan web secara otodidak.</p>
+                <p>Hai! Nama saya Unais Ali. Saya adalah seorang pembelajar otodidak yang saat ini sedang aktif mendalami dunia
+                    teknologi dan pengembangan web.</p>
                 <p>Bagi saya, coding bukan sekadar menulis baris kode, melainkan seni menyelesaikan masalah dan
                     membangun sesuatu yang bermanfaat bagi orang banyak. Selain coding, saya juga sangat tertarik dengan
                     prinsip desain visual dan sistem produktivitas untuk mengoptimalkan proses belajar sehari-hari.</p>
@@ -66,9 +70,21 @@
 
             <!-- Kolom Kanan: Kotak Detail Singkat -->
             <div class="about-details">
-                <div class="detail-card">
-                    <h3>Pendidikan</h3>
-                    <p>Mahasiswa & Pembelajar Otodidak</p>
+                <div class="detail-card" style="display: flex; flex-direction: column; gap:5px;">
+                    <h3>Riwayat Pendidikan</h3>
+                    <div>
+                        <p style="color: var(--text-muted); font-size: 12px;">SD</p>
+                        <p>MI Annajiyah, Bandung 2014-2018</p>
+                        <p>SDIT YABIS, Bontang 2018-2020</p>
+                    </div>
+                    <div>
+                        <p style="color: var(--text-muted); font-size: 12px;">SMP</p>
+                        <p>MTS Annajah, Bekasi 2020-2023</p>
+                    </div>
+                    <div>
+                        <p style="color: var(--text-muted); font-size: 12px;">SMA</p>
+                        <p>MA Annajah, Bekasi 2023-2026</p>
+                    </div>
                 </div>
                 <div class="detail-card">
                     <h3>Fokus Saat Ini</h3>
@@ -82,7 +98,7 @@
 
         </div>
     </section>
-
+    <!----------------------------[ Tempat proyek pribadi ]---------------------->
     <section id="project">
 
         <div class="project-header">
@@ -99,8 +115,8 @@
                         Jepang untuk melacak uang jajan bulanan.</p>
                     <span class="tag">Google Sheets</span>
                     <span class="tag">Productivity</span>
-                    <a href="https://drive.google.com/file/d/1ykQ1IhuZ97ryJfjtg2slIqkxn9ZXHddC/view?usp=drive_link" target="_blank"
-                        rel="noopener noreferrer">Lihat template di drive</a>
+                    <a href="https://drive.google.com/file/d/1ykQ1IhuZ97ryJfjtg2slIqkxn9ZXHddC/view?usp=drive_link"
+                        target="_blank" rel="noopener noreferrer">Lihat template di drive</a>
                 </div>
             </div>
 
@@ -142,9 +158,11 @@
 
             <div class="contact-buttons">
                 <!-- Tombol Utama (Pakai warna Split 1 / Oranye) -->
-                <a href="mailto:alkhudori.1026@gmail.com" class="btn-primary" target="_blank" rel="noopener noreferrer">Kirim Email</a>
+                <a href="mailto:alkhudori.1026@gmail.com" class="btn-primary" target="_blank"
+                    rel="noopener noreferrer">Kirim Email</a>
                 <!-- Tombol Sekunder (Pakai warna Split 2 / Kuning) -->
-                <a href="https://wa.me/6283879805997" class="btn-secondary" target="_blank" rel="noopener noreferrer">Hubungi via WA</a>
+                <a href="https://wa.me/6283879805997" class="btn-secondary" target="_blank"
+                    rel="noopener noreferrer">Hubungi via WA</a>
             </div>
         </div>
     </section>
